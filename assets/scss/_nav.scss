@@ -1,0 +1,114 @@
+/* Nav */
+.mnav {
+    background-color: rgba(248,249,250, .8);
+    width: 100%;
+    z-index: 1;
+    display: block;
+    @media(min-width: 769px) {
+        display: none;
+    }
+    &__toggler {
+        background-color: $red;
+        outline:none;
+        i.la-bars {
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+    .mnav__menu {
+        align-items: center;
+        &__item {
+            font-size: 1.8rem;
+            padding: 1rem 0;
+            color: $blue !important;
+            &:hover,
+            &.active {
+                color: $red !important;
+            }
+        }
+    }
+}
+
+.navbar-default {
+	// position: relative;
+	// min-height: 60px;
+	// width: 100%;
+	// z-index: 999;
+  //   display: none; /*******/
+}
+
+.tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: white;
+    text-align: center;
+    background-color: darken($red, 10%);
+    border-radius: .25rem;
+    border: 1px solid $red;
+    font-size: 1.4rem;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=right] .arrow::before, .tooltip.bs-tooltip-right .arrow::before {
+    margin-top: -3px;
+    content: "";
+    border-width: 5px 5px 5px 0;
+    border-right-color: $red;
+    background-color: $red;
+    border-color: $red;
+}
+
+.navbar-default .navbar-nav>li>a {
+color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+color: #ECEBEB;
+}
+
+.navbar-default .navbar-brand {
+color: #ffffff;
+}
+.navbar-default .navbar-brand:hover {
+color: #ECEBEB;
+}
+
+.navbar-brand {
+	font-family: arvo;
+	letter-spacing: 3px;
+	font-weight: 400 !important;
+}
+
+
+.side-nav {
+    position: fixed;
+    top: 45%;
+    right: 20px;
+    z-index: 1030;
+    display: none;
+    @media(min-width:769px) {
+        display: block;
+    }
+}
+
+.side-nav ul.nav-side-nav {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.side-nav ul.nav-side-nav > li {
+    display: block;
+    line-height: 1.42857;
+    margin: 0;
+    padding: 8px 0;
+}
+
+.side-nav ul.nav-side-nav > li > a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ea3845;
+}

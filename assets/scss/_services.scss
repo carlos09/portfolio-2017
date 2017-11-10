@@ -1,0 +1,89 @@
+.services {
+  background-color: $green;
+  padding: 9rem 0;
+  &__heading {
+    color: $blue;
+    font-family: $font-accent;
+    font-size: 8rem;
+    line-height: 1;
+    margin: 0 0 1.5rem;
+  }
+  &__info {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: $blue;
+    margin: 0;
+  }
+  &__btn {
+    @extend .btn__primary;
+    font-size: 1.4rem;
+    padding: 1.5rem 2rem;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;
+    &:hover {
+      color: white;
+      text-decoration: none;
+      background-color: darken($red, 10%)
+    }
+    i {
+      font-size: 2.2rem;
+      vertical-align: sub;
+      line-height: 1;
+      margin-right: .5rem;
+    }
+  }
+  &__left {
+    padding-right: 4rem;
+    @media(max-width: 480px) {
+      text-align: center;
+    }
+    @media(max-width: 991px) {
+      // flex-basis: 100%;
+      margin-bottom: 5rem;
+    }
+  }
+  &__right {
+    @media(max-width: 768px) {
+      // flex-basis: 100%;
+    }
+  }
+  &__col {
+    @extend .list-reset;
+    color: $blue;
+    font-size: 1.4rem;
+    padding-right: 3rem;
+    padding-left: 2rem;
+    @media (max-width: 480px) {
+      padding-left: 5rem;
+    }
+    &__item {
+      margin-bottom: 2rem;
+      &__title {
+        margin: 0 0 .5rem;
+        font-size: 1.8rem;
+        letter-spacing: 2;
+        color: $blue;
+        text-transform: uppercase;
+        position: relative;
+        font-weight: 500;
+        i {
+          font-size: 3rem;
+          line-height: 1;
+          vertical-align: sub;
+          position: absolute;
+          left: -4rem;
+          top: -5px;
+        }
+      }
+      &__desc {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        color: rgba(255,255,255, .75);
+        margin: 0;
+      }
+    }
+  }
+}

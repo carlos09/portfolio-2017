@@ -1,0 +1,45 @@
+.clients {
+  background-color: white;
+	padding: 90px 0;
+  &__heading {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: $blue;
+    font-weight: 300;
+    margin: 0 0 35px;
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    @media (max-width: 480px) {
+      font-size: 2.8rem;
+    }
+    &:after {
+      background-color: $green;
+      width: 60px;
+      height: 2px;
+      content: '';
+      display: block;
+      margin: 15px auto 0;
+    }
+  }
+  &__list {
+    @extend .list-reset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @media (max-width: 480px) {
+      flex-flow: column;
+    }
+    @media (min-width: 769px) {
+      justify-content: space-evenly;
+      margin: 0;
+    }
+    &__item {
+      margin: 1.5rem 0;
+      &__img {
+        max-width: 14rem;
+      }
+    }
+  }
+}

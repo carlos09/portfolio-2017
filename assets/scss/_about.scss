@@ -1,0 +1,59 @@
+.about {
+  text-align: center;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 90px 0;
+  color: #34495e;
+  &__img {
+    border-radius: 50%;
+    max-width: 20rem;
+    margin: 0 auto;
+    border: 1px solid #f1f1f1;
+  }
+  &__heading {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 4.5rem;
+    line-height: 1.5;
+    margin: 2rem 0 5.5rem;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    @media(max-width: 480px) {
+      font-size: 2.8rem;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 2px;
+      background: #98c11d;
+      bottom: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__text {
+    font-size: 18px;
+  	line-height: 1.5;
+    a {
+      color: $red;
+      &:hover {
+        color: darken($red, 10%);
+      }
+    }
+  }
+  &__btn {
+    @extend .btn__primary;
+    margin-top: 2.5rem;
+    text-decoration: none;
+    display: inline-block;
+    &:hover {
+      color: white;
+      text-decoration: none;
+      background-color: darken($red, 10%)
+    }
+    i {
+      font-size: 2.4rem;
+      margin-right: .5rem;
+    }
+  }
+}

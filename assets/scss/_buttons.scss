@@ -1,0 +1,27 @@
+.btn {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.4;
+  border-radius: 4px;
+  padding: 10px 15px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  transition: border .25s linear, color .25s linear, background-color .25s linear;
+  user-select: none;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  user-select: none;
+  &__primary {
+    @extend .btn;
+    color: #ffffff;
+    background-color: #ea3845;
+    border: 1px solid #ec4f5b;
+    font-size: 24px;
+    line-height: 1;
+    padding: 20px 50px;
+  }
+}
